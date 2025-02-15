@@ -6,14 +6,18 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "faker-seed": "npx node prisma/faker-seed.js"
+    "faker-seed": "npx node prisma/faker-seed.js",
+    "employee-mock": "npx node prisma/employee-mock.js",
+    "projects-mock": "npx node prisma/projects-mock.js",
+    "seed": "npm run employee-mock && npm run projects-mock"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^9.5.0",
-    "@prisma/client": "^6.3.1"
+    "@prisma/client": "^6.3.1",
+    "static-mock-data": "^5.0.1"
   },
   "devDependencies": {
     "prisma": "^6.3.1"

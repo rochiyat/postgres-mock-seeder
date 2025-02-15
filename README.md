@@ -1,6 +1,6 @@
 # Postgres Faker Seeder
 
-Insert Data from faker to DB PostgreSQL
+Insert Data from faker & static mock data to DB PostgreSQL
 
 ## Install
 
@@ -24,9 +24,14 @@ To seed the database with fake data, run:
 
 ```bash
 npm run faker-seed
+npm run seed
 ```
 
 This will generate and insert random data into the specified PostgreSQL database.
+
+## View Tables
+
+![View Tables](./assets/view-table.jpg)
 
 ## Customization
 
@@ -41,7 +46,7 @@ If you need to customize the number of records or data structure, you can edit t
 ## Troubleshooting
 
 - If the seeder fails to connect to the database, check your `.env` file and ensure PostgreSQL is running.
-- Use `console.log` inside `faker-seed.js` to debug the generated data before inserting it.
+- Use `console.log` inside `faker-seed.js`, `employee-mock.js`, `projects-mock.js` to debug the generated data before inserting it.
 
 ## License
 
