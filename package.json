@@ -1,0 +1,21 @@
+{
+  "name": "postgres-faker-seeder",
+  "version": "1.0.0",
+  "description": "Insert Data from faker to DB PostgreSQL",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "faker-seed": "npx node prisma/faker-seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "@prisma/client": "^6.3.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.3.1"
+  }
+}
