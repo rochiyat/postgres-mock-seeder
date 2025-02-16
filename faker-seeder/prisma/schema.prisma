@@ -1,0 +1,142 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Aircraft {
+  id   String @id @default(uuid())
+  name String
+  type String
+}
+
+model AircraftType {
+  id   String @id @default(uuid())
+  type String
+}
+
+model Airline {
+  id   String @id @default(uuid())
+  name String
+}
+
+model Animal {
+  id   String @id @default(uuid())
+  name String
+}
+
+model BitcoinAddress {
+  id      String @id @default(uuid())
+  address String
+  family  String
+}
+
+model BitcoinNetwork {
+  id   String @id @default(uuid())
+  name String
+}
+
+model Book {
+  id     String @id @default(uuid())
+  title  String
+  author String
+}
+
+model ChemicalElement {
+  id   String @id @default(uuid())
+  name String
+  symbol String
+}
+
+model Color {
+  id     String @id @default(uuid())
+  name   String
+  format String
+}
+
+model Commerce {
+  id      String @id @default(uuid())
+  product String
+  price   Float
+}
+
+model Company {
+  id   String @id @default(uuid())
+  name String
+}
+
+model Currency {
+  id   String @id @default(uuid())
+  name String
+  code String
+}
+
+model Finance {
+  id      String @id @default(uuid())
+  account String
+  amount  Float
+}
+
+model Food {
+  id   String @id @default(uuid())
+  name String
+}
+
+model Internet {
+  id    String @id @default(uuid())
+  email String
+  domain String
+}
+
+model Location {
+  id      String @id @default(uuid())
+  country String
+  city    String
+}
+
+model Music {
+  id     String @id @default(uuid())
+  genre  String
+  artist String
+}
+
+model Person {
+  id     String @id @default(uuid())
+  name   String
+  gender String
+}
+
+model PhoneNumber {
+  id    String @id @default(uuid())
+  number String
+}
+
+model Science {
+  id   String @id @default(uuid())
+  field String
+}
+
+model System {
+  id   String @id @default(uuid())
+  os   String
+}
+
+model Vehicle {
+  id    String @id @default(uuid())
+  model String
+  type  String
+}
+
+model Word {
+  id    String @id @default(uuid())
+  word  String
+}
