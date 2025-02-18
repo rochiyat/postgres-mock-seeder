@@ -1,0 +1,21 @@
+{
+  "name": "casual-seeder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "npx node prisma/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "casual": "^1.6.2",
+    "prisma": "^6.3.1"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.3.1"
+  }
+}

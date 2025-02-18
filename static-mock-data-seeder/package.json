@@ -12,9 +12,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@prisma/client": "^6.3.1",
     "static-mock-data": "^5.0.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
