@@ -1,6 +1,6 @@
-# Postgres Faker Seeder
+# Postgres Mock Seeder
 
-Insert Data from faker & static mock data to DB PostgreSQL
+Postgres Mock Seeder is a project designed to populate a PostgreSQL database with mock data using various popular JavaScript libraries, such as faker.js, static-mock-data, casual, and canche. This project is useful for testing, development, and schema validation without manually inserting data to database postgreSQL.
 
 ## Choose Library for Seeding Folder
 
