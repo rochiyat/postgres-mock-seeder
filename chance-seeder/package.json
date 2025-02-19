@@ -1,0 +1,21 @@
+{
+  "name": "chance-seeder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "npx node prisma/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prisma": "^6.4.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^6.4.0",
+    "chance": "^1.1.12"
+  }
+}
